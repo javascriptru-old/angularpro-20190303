@@ -21,3 +21,5 @@ let-userInfo="userInfo$ | async" *ngIf="userInfo"
 - public subject = new AsyncSubject<number>();
 
 - если выключить зоны, то роуты не работают
+
+- SW: cache API config // dataGroups
