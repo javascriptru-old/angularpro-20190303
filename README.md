@@ -13,3 +13,7 @@
 
 - *ngIf="userInfo$ | async as userInfo" 
 let-userInfo="userInfo$ | async" *ngIf="userInfo"
+
+- компилировать в один файл
+
+- { provide: UserService, useExisting: AdminService}
