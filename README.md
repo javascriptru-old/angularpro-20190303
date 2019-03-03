@@ -19,3 +19,5 @@ let-userInfo="userInfo$ | async" *ngIf="userInfo"
 - { provide: UserService, useExisting: AdminService}
 
 - public subject = new AsyncSubject<number>();
+
+- если выключить зоны, то роуты не работают
