@@ -17,3 +17,5 @@ let-userInfo="userInfo$ | async" *ngIf="userInfo"
 - компилировать в один файл
 
 - { provide: UserService, useExisting: AdminService}
+
+- public subject = new AsyncSubject<number>();
