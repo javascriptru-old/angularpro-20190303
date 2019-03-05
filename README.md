@@ -23,3 +23,7 @@ let-userInfo="userInfo$ | async" *ngIf="userInfo"
 - если выключить зоны, то роуты не работают
 
 - SW: cache API config // dataGroups
+
+- атака MITM с https сертификатами
+
+- как запустить инстанс сервиса, не инжектя его? (email Arseny Matisov )
