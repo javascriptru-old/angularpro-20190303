@@ -7,7 +7,7 @@ import { Banner2Component } from './banner2/banner2.component';
   selector: 'app-root',
   template: `VIEW
   
-      <div my>
+      <div *my>
       </div>
 
       <ng-container *ngComponentOutlet="mybanner">
@@ -34,7 +34,8 @@ export class AppComponent implements AfterViewInit{
 
   ngAfterViewInit() {
     const bannerComponentFactory = this.componentFactoryResolver.resolveComponentFactory(BannerComponent);
-    const bannerComponent = this.view.createComponent(bannerComponentFactory);
+    //const bannerComponent = this.view.createComponent(bannerComponentFactory);
+    const bannerComponent = this.my.view.createComponent(bannerComponentFactory);
     
   }
 }
